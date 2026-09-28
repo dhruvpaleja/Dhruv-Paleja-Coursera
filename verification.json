@@ -1,0 +1,53 @@
+{
+  "version": "3.0.0",
+  "files": [
+    {
+      "file": "manifest.json",
+      "sha256": "41c1ea5be71dd4ca185d489e2edd90bf1808f0dd03fa8f6f33601467d9d4b373",
+      "matchesRelease": true,
+      "matchesInstalled": true
+    },
+    {
+      "file": "popup.js",
+      "sha256": "82e31adf38e4ea4bd87a3f6c15f1aacdea020c7fac9dbc9ceb2497b912dd2ff9",
+      "matchesRelease": true,
+      "matchesInstalled": true
+    },
+    {
+      "file": "popup.html",
+      "sha256": "86aa3e7b451f3b1996fd234ec70c8edb1e126e48f81333ac12794f084ddcebc0",
+      "matchesRelease": true,
+      "matchesInstalled": true
+    },
+    {
+      "file": "background.js",
+      "sha256": "e538e13603773aa34c512de44f62065bf4151f0439c11e9a79c0e199ee1e4a42",
+      "matchesRelease": true,
+      "matchesInstalled": true
+    },
+    {
+      "file": "content.js",
+      "sha256": "6dcf434790d95310d76f28a91aa733c5335707d72ee11895f31002c4dd127b83",
+      "matchesRelease": true,
+      "matchesInstalled": true
+    },
+    {
+      "file": "pageBridge.js",
+      "sha256": "05b5bee4da827eea44012835701665d8fe6e76b433cb410558128fe47bb5bf27",
+      "matchesRelease": true,
+      "matchesInstalled": true
+    },
+    {
+      "file": "options.html",
+      "sha256": "920134387f84e0d8eaf1bd6e906cea1643ada754a8429ab0f62f55e5b4971b69",
+      "matchesRelease": true,
+      "matchesInstalled": true
+    },
+    {
+      "file": "options.js",
+      "sha256": "a726250214d436537645e812417f575e904af3bd5c963894e8b9f522e7d1aa5a",
+      "matchesRelease": true,
+      "matchesInstalled": true
+    }
+  ]
+}

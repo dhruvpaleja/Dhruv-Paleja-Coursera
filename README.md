@@ -1,108 +1,31 @@
-<div align="center">
+# Coursera Extension V3 - repaired distribution
 
-<img src="icons/icon128.png" width="90" alt="Coursera Solver Logo" />
+Maintained by **Dhruv Paleja**, forked from [TobiX-Dev/Coursera-Automation-By-Tobi](https://github.com/TobiX-Dev/Coursera-Automation-By-Tobi). Original runtime and copyright belong to TobiX-Dev under the [MIT license](LICENSE).
 
-# Coursera Solver Free — by T🍀
+This fork restores the missing extension files using the author's official **3.0.0** release asset. The upstream main branch referenced runtime files that had been deleted. An older installed 2.0.0 build also crashed during popup initialization after its built-in expiration date.
 
-Demo Video = (https://www.youtube.com/watch?v=Ud43NpEMtMY&t)
+**[Download the repaired V3 release](https://github.com/dhruvpaleja/Coursera-Automation-By-Tobi/releases/latest)** and choose **Coursera-Extension-V3-Ready.zip** under Assets.
 
-**The smartest Coursera automation tool. AI-powered quiz solving, video skipping, and full course completion — all in one click.**
+## Install in Chrome
 
-[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4c8bf5?style=flat-square&logo=googlechrome&logoColor=white)](https://github.com/TobiX-Dev/Coursera-Automation-By-TobiX)
-[![Status](https://img.shields.io/badge/Status-Working-10b981?style=flat-square)](https://quizsolver.infinityfreeapp.com/coursera_license/status.php)
-[![ AI](https://img.shields.io/badge/Powered%20by-Gemini,Groq%20AI-a855f7?style=flat-square)](https://console.groq.com)
-[![Stars](https://img.shields.io/github/stars/TobiX-Dev/Coursera-Automation-By-TobiX?style=flat-square&color=fbbf24)](https://github.com/TobiX-Dev/Coursera-Automation-By-TobiX/stargazers)
+1. Extract the ZIP into a permanent folder.
+2. Open chrome://extensions and enable **Developer mode**.
+3. Choose **Load unpacked** and select the folder containing manifest.json.
+4. Open the extension and enter your activation key.
+5. Configure your Groq or Gemini API key in the extension UI, then refresh your Coursera tab.
 
-</div>
+For an existing installation, back up its folder, replace the runtime files there, and click **Reload** in Chrome. Keeping the same installation folder preserves its extension identity. Do not commit activation keys or provider credentials.
 
----
+The extension retains its upstream name, **Boring Quiz Solver**, and manifest version **3.0.0**. The release tag v3.0.0-repaired identifies this repository packaging repair; it is not a new AI engine or the unfinished custom V4 extension.
 
-## ✨ Features
+## Verification and remaining setup
 
-| Feature | What it does | Status |
-|---|---|---|
-| 🤖 **Auto Solve Quiz (Gemini Added For More Accuracy)** | Sends questions to Groq's Llama 3.3 And Now Improved with Gemini Free Models Ai — fills every answer automatically | ✅ Working |
-| 🚀 **Solve All Quizzes** | Pipeline mode — finds, navigates, solves, and submits every quiz in the course | ✅ Working |
-| 🎬 **Skip Videos** | Marks all lecture videos as watched via Coursera API — no playback needed | ✅ Working |
-| 📖 **Skip Readings** | Completes all reading supplements instantly | ✅ Working |
-| 💬 **Skip Discussions** | Auto-posts a reply to all discussion prompts | ✅ Working |
-| 🔌 **Skip Plugins** | Marks ungraded labs, widgets & notebooks as done | ✅ Working |
-| 🔗 **Shareable Link** | Copies the direct review link for peer assignments | ✅ Working |
-| 📜 **Honor Code** | Auto-checks the honor code checkbox before submission | ✅ Built-in |  
+- Verified: service-worker registration, popup and options initialization with zero page exceptions or missing element lookups, JavaScript syntax, and runtime hashes against the official release.
+- The activation screen was also verified in Chrome after upgrading the existing installation.
+- Activation, provider requests, course automation, submissions, and marks have **not** been verified. Full marks are not guaranteed.
+- License checks and the upstream DevTools restriction remain. If the popup displays **UNAUTHORIZED / Close DevTools**, close the extension's DevTools and reopen the popup.
+- An idle **Service worker (Inactive)** is normal [Manifest V3 behavior](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle).
 
----
+Run **node scripts/verify.cjs** for dependency-free integrity and syntax checks. Browser initialization was tested separately in isolated Chromium with external networking disabled.
 
-## 🚀 Installation
-
-```
-1. Download or clone this repo
-2. Unzip the folder
-3. Open Chrome → chrome://extensions/
-4. Enable Developer Mode (top right toggle)
-5. Click "Load unpacked" → select the extension folder
-6. Click the extension icon → enter your free key → add Groq API key → done ✓
-```
-
-**Get a free key →** [Quiz Solver](https://quizsolver.infinityfreeapp.com/coursera_license/yoo.php)  
-**Get API keys (free) →** [Groq Api](https://console.groq.com/keys) [Gemini Api](https://aistudio.google.com/api-keys)
-
----
-
-## 🧑‍💻 How to Use
-
-### Solve a Single Quiz 
-1. Open any Coursera quiz page
-2. Click the extension icon
-3. Hit **"Solve This Quiz"**
-4. The extension fills all answers — confirm submission when prompted ✓
-
-### Solve All Quizzes in a Course (Works Only With Groq Not Gemini Cuz Of RPM Limits)
-1. Go to the **Assignments** or **Grades** page of a course
-2. Click the extension icon
-3. Hit **"Solve All Quizzes"**
-4. Sit back — it navigates, solves, and submits every quiz automatically 🚀
-
-### Skip Everything
-- Click **Skip Videos / Readings / Discussions / Plugins** on any course page
-- Items are marked complete in seconds — refresh to see checkmarks ✓
-
-### Shareable Peer Link
-1. Go to a peer assignment submission page (`/submit`)
-2. Click **"Shareable Link"** in the popup
-3. Link is copied to clipboard — share with your reviewer ✓
-
-## 🛠️ Setup —  API Keys
-
-The quiz solver uses **Groq's free Llama 3.3 And Gemini Models 2.5F,3.1F,3.0F,2.5P ** models.
-
-1. Go to [console.groq.com/keys](https://console.groq.com/keys) Or [aistudio.google.com/api-keys](https://aistudio.google.com/api-keys)
-2. Create a free account → generate an API key / For Gemini Just Login With GMail
-3. Paste it in the extension popup under **⚙ Settings →  API Keys ** → Save
-
-No cost. No limits for normal usage.
-
----
-
-
-## 🙏 Support the Project
-
-If this saved you time, a ⭐ on GitHub means everything — it keeps the project alive and helps others find it.
-
-[![Star on GitHub](https://img.shields.io/badge/⭐%20Star%20on%20GitHub-fbbf24?style=for-the-badge&logo=github&logoColor=black)](https://github.com/TobiX-Dev/Coursera-Automation-By-TobiX)
-
-- 🐛 **Found a bug?** Open an [issue](https://github.com/TobiX-Dev/Coursera-Automation-By-TobiX/issues)
-- 💬 **Questions?** Ask in [Discussions](https://github.com/TobiX-Dev/Coursera-Automation-By-TobiX/discussions)
-
----
-
-## ⚠️ Disclaimer
-
-This tool is for **educational and personal use only**. The developer is not responsible for any misuse or violation of Coursera's Terms of Service. Use at your own risk.
-
----
-
-<div align="center">
-
-**Made with ❤️ by [TobiX-Dev](https://github.com/TobiX-Dev)**
-
-</div>
+See [repair details](LOCAL-SETUP.md) and [SHA-256 verification](verification.json). The [original upstream README](UPSTREAM-README.md) is preserved for reference; its feature claims are not independent validation by this fork.

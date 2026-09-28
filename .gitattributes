@@ -1,0 +1,6 @@
+# Preserve upstream runtime bytes so recorded SHA-256 hashes survive checkout.
+* -text
+*.md text eol=lf
+scripts/*.cjs text eol=lf
+verification.json text eol=lf
+.gitattributes text eol=lf
