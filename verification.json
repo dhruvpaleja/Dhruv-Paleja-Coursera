@@ -1,53 +1,101 @@
 {
-  "version": "3.0.0",
+  "version": "3.0.1",
+  "upstreamVersion": "3.0.0",
   "files": [
     {
       "file": "manifest.json",
-      "sha256": "41c1ea5be71dd4ca185d489e2edd90bf1808f0dd03fa8f6f33601467d9d4b373",
-      "matchesRelease": true,
-      "matchesInstalled": true
+      "sha256": "fed6bfd0f8b38e5655adbd1af39f7d3a9d96533b78e1800ed27ac92bc8e22129",
+      "upstreamSha256": "41c1ea5be71dd4ca185d489e2edd90bf1808f0dd03fa8f6f33601467d9d4b373",
+      "matchesRelease": false
+    },
+    {
+      "file": "popup.html",
+      "sha256": "fb43ce9b78695eace2ffe8a2f509fb096d569e8776c478b0237b98b0b4f2443c",
+      "upstreamSha256": "86aa3e7b451f3b1996fd234ec70c8edb1e126e48f81333ac12794f084ddcebc0",
+      "matchesRelease": false
+    },
+    {
+      "file": "options.html",
+      "sha256": "1704d7b13b64a9324ac584fe29d772c9bdf8585859d56af722b95234aea93243",
+      "upstreamSha256": "920134387f84e0d8eaf1bd6e906cea1643ada754a8429ab0f62f55e5b4971b69",
+      "matchesRelease": false
     },
     {
       "file": "popup.js",
       "sha256": "82e31adf38e4ea4bd87a3f6c15f1aacdea020c7fac9dbc9ceb2497b912dd2ff9",
-      "matchesRelease": true,
-      "matchesInstalled": true
-    },
-    {
-      "file": "popup.html",
-      "sha256": "86aa3e7b451f3b1996fd234ec70c8edb1e126e48f81333ac12794f084ddcebc0",
-      "matchesRelease": true,
-      "matchesInstalled": true
-    },
-    {
-      "file": "background.js",
-      "sha256": "e538e13603773aa34c512de44f62065bf4151f0439c11e9a79c0e199ee1e4a42",
-      "matchesRelease": true,
-      "matchesInstalled": true
-    },
-    {
-      "file": "content.js",
-      "sha256": "6dcf434790d95310d76f28a91aa733c5335707d72ee11895f31002c4dd127b83",
-      "matchesRelease": true,
-      "matchesInstalled": true
-    },
-    {
-      "file": "pageBridge.js",
-      "sha256": "05b5bee4da827eea44012835701665d8fe6e76b433cb410558128fe47bb5bf27",
-      "matchesRelease": true,
-      "matchesInstalled": true
-    },
-    {
-      "file": "options.html",
-      "sha256": "920134387f84e0d8eaf1bd6e906cea1643ada754a8429ab0f62f55e5b4971b69",
-      "matchesRelease": true,
-      "matchesInstalled": true
+      "upstreamSha256": "82e31adf38e4ea4bd87a3f6c15f1aacdea020c7fac9dbc9ceb2497b912dd2ff9",
+      "matchesRelease": true
     },
     {
       "file": "options.js",
       "sha256": "a726250214d436537645e812417f575e904af3bd5c963894e8b9f522e7d1aa5a",
-      "matchesRelease": true,
-      "matchesInstalled": true
+      "upstreamSha256": "a726250214d436537645e812417f575e904af3bd5c963894e8b9f522e7d1aa5a",
+      "matchesRelease": true
+    },
+    {
+      "file": "background.js",
+      "sha256": "e538e13603773aa34c512de44f62065bf4151f0439c11e9a79c0e199ee1e4a42",
+      "upstreamSha256": "e538e13603773aa34c512de44f62065bf4151f0439c11e9a79c0e199ee1e4a42",
+      "matchesRelease": true
+    },
+    {
+      "file": "content.js",
+      "sha256": "6dcf434790d95310d76f28a91aa733c5335707d72ee11895f31002c4dd127b83",
+      "upstreamSha256": "6dcf434790d95310d76f28a91aa733c5335707d72ee11895f31002c4dd127b83",
+      "matchesRelease": true
+    },
+    {
+      "file": "pageBridge.js",
+      "sha256": "05b5bee4da827eea44012835701665d8fe6e76b433cb410558128fe47bb5bf27",
+      "upstreamSha256": "05b5bee4da827eea44012835701665d8fe6e76b433cb410558128fe47bb5bf27",
+      "matchesRelease": true
+    },
+    {
+      "file": "branding.js",
+      "sha256": "8102643b877ac9a8af001458d0b547e72acabd34a5eff801f0cbb3a9ea393ec2",
+      "added": true
+    },
+    {
+      "file": "icons/icon128.png",
+      "sha256": "ad5f1b3ffb809c0e3273b51e516109c6fab596c29c6ba749521d0fb454757cb8",
+      "upstreamSha256": "60ebe7d63f454c313ff999e0950f0545be4e912b336a2361b6ce4810b9890cc2",
+      "matchesRelease": false
+    },
+    {
+      "file": "icons/icon16.png",
+      "sha256": "0dd0fc9dd23ce16bf21c59e468e9cb59c5121af0cd98f2d40f960982a3b640d9",
+      "upstreamSha256": "4dbba21c810ac3944985dc1ac7cee682074da402e13714a006c6b65df3548f79",
+      "matchesRelease": false
+    },
+    {
+      "file": "icons/icon32.png",
+      "sha256": "7d392bffe831a176aa3c35fdc19712aa347513f91d08404d58216b83000f515a",
+      "upstreamSha256": "be9c979d3b350a926d541e9e1b06553560e40931e629caf52652f027ceb28306",
+      "matchesRelease": false
+    },
+    {
+      "file": "icons/icon48.png",
+      "sha256": "1bfdc3fea0bbeab2f95284616004f7c97dc8c54f8cbe9d25fc4c5e4cf6557f30",
+      "upstreamSha256": "66d210339a8066e7c2d9c2d9f776da05a58fc81ef6709bba62c4216a3a06cb43",
+      "matchesRelease": false
+    },
+    {
+      "file": "icons/icon64.png",
+      "sha256": "a742f3cf4d818cb123f0fdd3af5520259b9cca6b0d9cbc894c423c57e3eb15f3",
+      "upstreamSha256": "66d210339a8066e7c2d9c2d9f776da05a58fc81ef6709bba62c4216a3a06cb43",
+      "matchesRelease": false
+    },
+    {
+      "file": "icons/logo.png",
+      "sha256": "ad5f1b3ffb809c0e3273b51e516109c6fab596c29c6ba749521d0fb454757cb8",
+      "upstreamSha256": "66d210339a8066e7c2d9c2d9f776da05a58fc81ef6709bba62c4216a3a06cb43",
+      "matchesRelease": false
+    },
+    {
+      "file": "icons/logo1.png",
+      "sha256": "ad5f1b3ffb809c0e3273b51e516109c6fab596c29c6ba749521d0fb454757cb8",
+      "upstreamSha256": "60ebe7d63f454c313ff999e0950f0545be4e912b336a2361b6ce4810b9890cc2",
+      "matchesRelease": false
     }
   ]
 }

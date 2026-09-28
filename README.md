@@ -1,31 +1,31 @@
-# Coursera Extension V3 - repaired distribution
+# Dhruv Paleja - Coursera Assistant
 
-Maintained by **Dhruv Paleja**, forked from [TobiX-Dev/Coursera-Automation-By-Tobi](https://github.com/TobiX-Dev/Coursera-Automation-By-Tobi). Original runtime and copyright belong to TobiX-Dev under the [MIT license](LICENSE).
+Chrome extension maintained and branded by **Dhruv Paleja**, based on the repaired upstream V3 runtime. Current release: **3.0.1**.
 
-This fork restores the missing extension files using the author's official **3.0.0** release asset. The upstream main branch referenced runtime files that had been deleted. An older installed 2.0.0 build also crashed during popup initialization after its built-in expiration date.
+**[Download Dhruv Paleja Coursera Assistant](https://github.com/dhruvpaleja/Dhruv-Paleja-Coursera/releases/latest)** - choose **Dhruv-Paleja-Coursera-v3.0.1.zip** under Assets.
 
-**[Download the repaired V3 release](https://github.com/dhruvpaleja/Coursera-Automation-By-Tobi/releases/latest)** and choose **Coursera-Extension-V3-Ready.zip** under Assets.
-
-## Install in Chrome
+## Install
 
 1. Extract the ZIP into a permanent folder.
 2. Open chrome://extensions and enable **Developer mode**.
-3. Choose **Load unpacked** and select the folder containing manifest.json.
-4. Open the extension and enter your activation key.
-5. Configure your Groq or Gemini API key in the extension UI, then refresh your Coursera tab.
+3. Click **Load unpacked** and select the folder containing manifest.json.
+4. Open **Dhruv Paleja - Coursera Assistant** and enter your activation key.
+5. Configure your Groq or Gemini API key, then refresh your Coursera tab.
 
-For an existing installation, back up its folder, replace the runtime files there, and click **Reload** in Chrome. Keeping the same installation folder preserves its extension identity. Do not commit activation keys or provider credentials.
+For an existing installation, back up its directory, replace the extension files there, and click **Reload** in Chrome. Keeping the installation path preserves the extension identity. Never commit keys.
 
-The extension retains its upstream name, **Boring Quiz Solver**, and manifest version **3.0.0**. The release tag v3.0.0-repaired identifies this repository packaging repair; it is not a new AI engine or the unfinished custom V4 extension.
+## This release
 
-## Verification and remaining setup
+- Dhruv Paleja name, DP icons, popup, settings and GitHub link.
+- Repaired V3 runtime restored from the original author's 3.0.0 release; branding version bumped to 3.0.1.
+- Installation notes and reproducible integrity checks: **node scripts/verify.cjs**.
 
-- Verified: service-worker registration, popup and options initialization with zero page exceptions or missing element lookups, JavaScript syntax, and runtime hashes against the official release.
-- The activation screen was also verified in Chrome after upgrading the existing installation.
-- Activation, provider requests, course automation, submissions, and marks have **not** been verified. Full marks are not guaranteed.
-- License checks and the upstream DevTools restriction remain. If the popup displays **UNAUTHORIZED / Close DevTools**, close the extension's DevTools and reopen the popup.
-- An idle **Service worker (Inactive)** is normal [Manifest V3 behavior](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle).
+The runtime still requires activation and an AI provider key. License checks and the upstream DevTools restriction remain. If **UNAUTHORIZED / Close DevTools** appears, close the extension's DevTools and reopen the popup. An idle service worker is [normal in Manifest V3](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle).
 
-Run **node scripts/verify.cjs** for dependency-free integrity and syntax checks. Browser initialization was tested separately in isolated Chromium with external networking disabled.
+Service-worker, popup and settings initialization, file hashes and syntax were checked. Live solving, submissions and grades remain unverified; full marks are not guaranteed. This is the V3 branding release, not the unfinished custom V4.
 
-See [repair details](LOCAL-SETUP.md) and [SHA-256 verification](verification.json). The [original upstream README](UPSTREAM-README.md) is preserved for reference; its feature claims are not independent validation by this fork.
+## Attribution
+
+Forked from [TobiX-Dev/Coursera-Automation-By-Tobi](https://github.com/TobiX-Dev/Coursera-Automation-By-Tobi). The original MIT copyright is retained in [LICENSE](LICENSE). [Original upstream documentation](UPSTREAM-README.md) is historical reference, not independently verified feature claims.
+
+See [repair notes](LOCAL-SETUP.md) and [file verification records](verification.json).
